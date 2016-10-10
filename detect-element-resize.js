@@ -137,11 +137,22 @@
 	window.removeResizeListener = function(element, fn){
 		if (attachEvent) element.detachEvent('onresize', fn);
 		else {
-			element.__resizeListeners__.splice(element.__resizeListeners__.indexOf(fn), 1);
-			if (!element.__resizeListeners__.length) {
+			var resizeListeners = element.__resizeListeners__,
+				resizeTriggers = element.__resizeTriggers__,
+				idx;
+
+			if (resizeListeners) {
+				idx = resizeListeners.indexOf(fn);
+				if (idx !== -1) {
+					resizeListeners.splice(idx, 1);
+				}
+				if (!resizeListeners.length) {
 					element.removeEventListener('scroll', scrollListener);
-					element.__resizeTriggers__ = !element.removeChild(element.__resizeTriggers__);
+					if (resizeTriggers) {
+						element.__resizeTriggers__ = !element.removeChild(resizeTriggers);
+					}
+				}
 			}
 		}
-	}
+	};
 })();
