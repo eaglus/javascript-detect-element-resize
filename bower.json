@@ -1,12 +1,12 @@
 {
     "name": "javascript-detect-element-resize",
-    "version": "0.5.3",
+    "version": "0.5.3-solit",
     "main": "detect-element-resize.js",
     "repository": {
         "type": "git",
-        "url": "git@github.com:sdecima/javascript-detect-element-resize.git"
+        "url": "git@github.com:eaglus/javascript-detect-element-resize.git"
     },
-    "homepage": "https://github.com/sdecima/javascript-detect-element-resize",
+    "homepage": "https://github.com/eaglus/javascript-detect-element-resize",
     "authors": [
         "Sebastián Décima (https://github.com/sdecima/)"
     ],
