@@ -1,6 +1,6 @@
 {
   "name": "javascript-detect-element-resize",
-  "version": "0.5.3-solit",
+  "version": "0.5.5-solit",
   "description": "A Cross-Browser, Event-based, Element Resize Detection",
   "main": "detect-element-resize.js",
   "directories": {
