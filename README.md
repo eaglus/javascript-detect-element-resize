@@ -79,6 +79,10 @@ TODO
 
 Release Notes
 =============
+v0.5.6-solit
+------
+ - solit fixes: (see history)
+
 v0.5.3
 ------
 

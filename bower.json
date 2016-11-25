@@ -1,6 +1,6 @@
 {
     "name": "javascript-detect-element-resize",
-    "version": "0.5.5-solit",
+    "version": "0.5.6-solit",
     "main": "detect-element-resize.js",
     "repository": {
         "type": "git",
